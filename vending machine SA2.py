@@ -35,8 +35,8 @@ suggestions = {
     5: 9,   # Ice Tea -> Chocolate
     7: 3,   # Chicken Sandwich -> Coke
     8: 2,   # Chips -> Water
-    9: 3,   # Chocolate -> Coke
-    10: 5   # Biscuits -> Ice Tea
+    9: 7,   # Chocolate -> Chicken Sandwich
+    1: 6    # Juice -> Granola Bars
 }
 
 def display_menu():
@@ -45,7 +45,7 @@ def display_menu():
     for category, items in Products.items():
         print(f"\n{category}:")
         for code, item in items.items():
-            stock = "Out of stock" if item['stock'] == 0 else f"${item['price']:.2f}"
+            stock = "Out of stock" if item['stock'] == 0 else f"AED{item['price']:.2f}"
             print(f"{code}. {item['name']} - {stock}")
 
 def get_money():
@@ -141,3 +141,4 @@ def vending_machine():
 
 # Run the vending machine
 vending_machine()
+
