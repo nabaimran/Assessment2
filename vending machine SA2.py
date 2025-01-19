@@ -10,14 +10,14 @@ print("""
 # Dictionary of products categorized
 Products = {
     'Drinks': {
-        1: {'name': 'Granola Bars', 'price': 2.0, 'stock': 7, 'code': 1},
-        2: {'name': 'Cookie', 'price': 3.0, 'stock': 8, 'code': 2},
-        3: {'name': 'Water', 'price': 2.0, 'stock': 8, 'code': 3},
-        4: {'name': 'Coke', 'price': 1.5, 'stock': 5, 'code': 4},
-        5: {'name': 'Pepsi', 'price': 1.4, 'stock': 5, 'code': 5},
-        6: {'name': 'Ice tea', 'price': 4.0, 'stock': 5, 'code': 6}
+        1: {'name': 'Juice', 'price': 3.0, 'stock': 8, 'code': 2},
+        2: {'name': 'Water', 'price': 2.0, 'stock': 8, 'code': 3},
+        3: {'name': 'Coke', 'price': 1.5, 'stock': 5, 'code': 4},
+        4: {'name': 'Pepsi', 'price': 1.4, 'stock': 5, 'code': 5},
+        5: {'name': 'Ice tea', 'price': 4.0, 'stock': 5, 'code': 6}
     },
     'Snacks': {
+        6: {'name': 'Granola Bars', 'price': 2.0, 'stock': 7, 'code': 1},
         7: {'name': 'Chicken Sandwich', 'price': 3.0, 'stock': 8, 'code': 7},
         8: {'name': 'Chips', 'price': 1.2, 'stock': 5, 'code': 8},
         9: {'name': 'Chocolate', 'price': 1.7, 'stock': 5, 'code': 9},
@@ -27,16 +27,16 @@ Products = {
 
 # Suggestions for the customers
 suggestions = {
-    1: 8,   # Granola Bars -> Chips
-    2: 10,  # Cookie -> Biscuits
-    3: 8,   # Water -> Chips
-    4: 10,  # Coke -> Biscuits
-    5: 10,  # Pepsi -> Biscuits
-    6: 9,   # Ice Tea -> Chocolate
-    7: 4,   # Chicken Sandwich -> Coke
-    8: 3,   # Chips -> Water
-    9: 4,   # Chocolate -> Coke
-    10: 6   # Biscuits -> Ice Tea
+    6: 2,   # Granola Bars -> Water
+    10: 1,  # Biscuits -> Juice
+    2: 8,   # Water -> Chips
+    3: 10,  # Coke -> Biscuits
+    4: 10,  # Pepsi -> Biscuits
+    5: 9,   # Ice Tea -> Chocolate
+    7: 3,   # Chicken Sandwich -> Coke
+    8: 2,   # Chips -> Water
+    9: 3,   # Chocolate -> Coke
+    10: 5   # Biscuits -> Ice Tea
 }
 
 def display_menu():
